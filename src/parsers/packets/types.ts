@@ -64,8 +64,12 @@ export interface LapData {
   m_lastLapTime: number;
   m_currentLapTime: number;
   m_bestLapTime: number;
-  m_sector1Time: number;
-  m_sector2Time: number;
+  m_bestLapNum: number;
+  m_sector1TimeInMS: number;
+  m_sector2TimeInMS: number;
+  m_bestOverallSector1TimeInMS: number;
+  m_bestOverallSector2TimeInMS: number;
+  m_bestOverallSector3TimeInMS: number;
   m_lapDistance: number;
   m_totalDistance: number;
   m_safetyCarDelta: number;
@@ -108,7 +112,7 @@ export interface CarStatusData {
   m_drsActivationDistance: number;
   m_tyresWear: TyreWear[];
   m_actualTyreCompound: number;
-  m_visualTyreCompound: number;
+  m_tyreVisualCompound: number;
   m_tyresAgeLaps: number;
   m_tyreCompound: number;
   m_tyresDamage: TyreDamage[];
