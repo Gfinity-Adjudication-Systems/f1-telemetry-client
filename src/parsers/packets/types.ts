@@ -257,3 +257,17 @@ export interface PacketLobbyInfoData {
   m_numPlayers: number;
   m_lobbyPlayers: LobbyInfoData[];
 }
+
+export interface PenaltyEvent extends PacketEventData {
+  m_eventDetails: number;
+}
+
+export interface PenaltyData {
+  penaltyType: number;
+  infringementType: number;
+  vehicleIdx: number;
+  otherVehicleIdx: number;
+  time: number;
+  lapNum: number;
+  placesGained: number;
+}
