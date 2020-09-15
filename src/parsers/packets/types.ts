@@ -259,7 +259,7 @@ export interface PacketLobbyInfoData {
 }
 
 export interface PenaltyEvent extends PacketEventData {
-  m_eventDetails: number;
+  m_eventDetails: PenaltyData;
 }
 
 export interface PenaltyData {
