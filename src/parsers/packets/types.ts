@@ -271,3 +271,12 @@ export interface PenaltyData {
   lapNum: number;
   placesGained: number;
 }
+
+export interface FastestLapEvent extends PacketEventData {
+  m_eventDetails: FastestLapData;
+}
+
+export interface FastestLapData {
+  vehicleIdx: number;
+  lapTime: number;
+}
