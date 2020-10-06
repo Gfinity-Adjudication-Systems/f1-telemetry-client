@@ -280,3 +280,11 @@ export interface FastestLapData {
   vehicleIdx: number;
   lapTime: number;
 }
+export interface SpeedTrapEvent extends PacketEventData {
+  m_eventDetails: SpeedTrapData;
+}
+
+export interface SpeedTrapData {
+  vehicleIdx: number;
+  speed: number;
+}
